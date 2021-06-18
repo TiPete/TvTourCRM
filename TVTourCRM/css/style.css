@@ -1,0 +1,99 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    min-width: 1024px;
+    
+    
+}
+
+.headerButton {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    color: white;
+    width: 200px;
+    
+    font-family: Arial, sans-serif;
+}
+
+
+.main-container {
+    width: 90%;
+    height: 100%;
+    
+    margin: 0 auto;
+    position: relative;
+}
+
+.mainMenu {
+    height: 10%;
+    background-color: red;
+    
+    padding-left: 35px;
+    padding-right: 35px;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainWindow {
+    height: 90%;  
+    background-color: white;
+}
+
+.popUp {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 50%;
+    top: 50%;
+    width: 80%; /* Full width */
+    height: 80%; /* Full height */
+    padding: 3px;
+    border-radius: 3px;
+    Border: 1px solid black;    
+    }
+
+#closeButton {
+    float: right;
+    border: none;
+    padding: 0;
+    background: none;
+}
+
+.ticket-container {
+    display: block;
+}
+
+.ticket {
+    border: 1px red solid;
+    align-items: center;
+    background-color: lightgray;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2px;
+    display: grid;
+    grid-template-areas:
+    'ticketsNomResidence ticketsNomResidence ticketsNomResidence ticketStatut ticketPersonneContact ticketPersonneContact'
+    'ticketDateOuverture ticketDateOuverture ticketDateOuverture ticketDateFerme ticketDateFerme ticketDateFerme';
+}
+
+.ticket:hover {
+    background-color: white;
+    font-size: large;
+}
+
+.ticketsNomResidence {
+}
+
+.ticketStatut {
+}
+
+.ticketPersonneContact {
+}
+
+.ticketDateOuverture {
+}
