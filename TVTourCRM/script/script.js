@@ -14,7 +14,8 @@ function OpenPopUp(texte) {
     document.getElementById("mainPopUp").innerHTML=texte;
     document.getElementById("popUp").style.display="block";
 }
-const loadHtml = function(parentElementId, filePath) {
+
+ const loadHtml = function(parentElementId, filePath) {
     const init = {
         method : "GET",
         headers : { "Content-Type" : "text/html" },

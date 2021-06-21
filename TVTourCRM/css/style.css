@@ -6,6 +6,13 @@ html, body {
     
 }
 
+.elementVisible {
+    display: block;
+}
+.elementInvisible {
+    display:none;
+}
+
 .headerButton {
     background-color: Transparent;
     background-repeat:no-repeat;
@@ -18,15 +25,12 @@ html, body {
     
     font-family: Arial, sans-serif;
 }
-
-
 .main-container {
     width: 90%;
     height: 100%;
     margin: 0 auto;
     position: relative;
 }
-
 .mainMenu {
     height: 10%;
     background-color: red;
@@ -37,7 +41,6 @@ html, body {
     display: flex;
     justify-content: space-between;
 }
-
 .mainWindow {
     height: 90%;  
     background-color: white;
@@ -55,7 +58,6 @@ html, body {
     border-radius: 3px;
     Border: 1px solid black;    
     }
-
 #closeButton {
     float: right;
     border: none;
@@ -63,10 +65,10 @@ html, body {
     background: none;
 }
 
+
 .ticket-container {
     display: block;
 }
-
 .ticket {
     align-items: center;
     background-color: white;
@@ -75,14 +77,7 @@ html, body {
     margin-top: 2px;
     display: flex;
     grid-row-gap: 3px;
-    //grid-template-columns: 25% 25% 50%;
-
 }
-
-.ticket>div {
-    //border: 1px gray dotted;
-}
-
 .ticket:hover {
     background-color: whitesmoke;
 }
@@ -90,21 +85,24 @@ html, body {
     font-weight: bold;
     color: royalblue;
     width:30%;
-    //grid-area: 1 / 1 / 1 / 3;
 }
 .ticketDateOuverture {
     font-size: smaller;
     color:gray;
-    width:20%;
-    //grid-area: 2 / 1 / 2 / 3;
+    width:15%;
 }
-
 .ticketDescription {
     font-size: large; 
     color: black;
-    width:50%;
-    //grid-area: 3 / 1 / 3 / 5;
+    width:55%;
 }
 .divLink {
     text-decoration: none;
+}
+
+.residenceRow {
+    display: flex;
+}
+.residenceColumn {
+    flex: 33%;
 }
