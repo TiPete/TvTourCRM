@@ -11,15 +11,16 @@ function BoutonPersonnes() {
     loadHtml("mainWindow", ".//includes//main-personnes.html");
 } 
 
-function OpenPopUp(texte) {
+function OpenPopUp(lien) {
+    console.log(lien);
+    loadHtml("popUp", lien)
     document.getElementById("mainWindow").style.brightness= "50%";
-    document.getElementById("mainPopUp").innerHTML=texte;
-    document.getElementById("popUp").style.display="block";
+    document.getElementById("popUp-container").style.display="block";
 }
 
 function ClosePopUp() {
     document.getElementById("mainWindow").style.backgroundColor= "white";
-    document.getElementById("popUp").style.display="none";
+    document.getElementById("popUp-container").style.display="none";
 }
 
  const loadHtml = function(parentElementId, filePath) {
