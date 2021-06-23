@@ -48,21 +48,22 @@ html, body {
 
 .popUp {
     display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 50%;
+    position: fixed;
     top: 50%;
-    width: 80%; /* Full width */
-    height: 80%; /* Full height */
-    padding: 3px;
-    border-radius: 3px;
-    Border: 1px solid black;    
-    }
-#closeButton {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+    
+    border: 1px solid black;
+    background-color: grey;
+}
+.closeButton {
     float: right;
     border: none;
     padding: 0;
     background: none;
+    
 }
 
 .ticket-container {

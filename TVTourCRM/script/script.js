@@ -10,9 +10,16 @@ function BoutonGroupes() {
 function BoutonPersonnes() {
     loadHtml("mainWindow", ".//includes//main-personnes.html");
 } 
+
 function OpenPopUp(texte) {
+    document.getElementById("mainWindow").style.brightness= "50%";
     document.getElementById("mainPopUp").innerHTML=texte;
     document.getElementById("popUp").style.display="block";
+}
+
+function ClosePopUp() {
+    document.getElementById("mainWindow").style.backgroundColor= "white";
+    document.getElementById("popUp").style.display="none";
 }
 
  const loadHtml = function(parentElementId, filePath) {
