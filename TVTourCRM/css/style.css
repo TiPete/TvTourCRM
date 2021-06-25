@@ -21,29 +21,51 @@ html, body {
     overflow: hidden;
     outline:none;
     color: white;
-    width: 200px;
-    
+    width: 100%;
+    font-size: larger;
     font-family: Arial, sans-serif;
+    margin-top: 20px;
+    
+}
+.headerButton:hover {
+    font-weight: bold;
 }
 .main-container {
     width: 90%;
     height: 100%;
     margin: 0 auto;
     position: relative;
+    display: flex;
 }
 .mainMenu {
-    height: 10%;
-    background-color: red;
-    
-    padding-left: 35px;
-    padding-right: 35px;
-    
-    display: flex;
-    justify-content: space-between;
+    background-color: dimgrey;
+    width: 250px;
+    justify-content: center;
 }
+.mainMenuSubMenu{
+    text-align: center;
+    color: whitesmoke;
+    display: none;
+}
+.mainSubMenuButton {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    color: white;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+.mainSubMenuButton:hover {
+    font-weight: bold;
+}
+
 .mainWindow {
-    height: 90%;  
     background-color: white;
+    flex: auto;
+    overflow: scroll;
 }
 
 .popUp-container {

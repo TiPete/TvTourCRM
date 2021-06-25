@@ -16,15 +16,42 @@
 
 <div class="main-container">
     <div class="mainMenu">
-        <img src="./includes/logo.png" style="background-color: white; align-self: lef;">
-        <button class="headerButton" onclick="BoutonTechnique()">Technique</button>
-        <button class="headerButton" onclick="BoutonResidences()">Résidences</button>
-        <button class="headerButton" onclick="BoutonGroupes()">Groupes</button>
-        <button class="headerButton" onclick="BoutonPersonnes()">Personnes</button>
+        <img src="./includes/logo.png" style="background-color: none; align-self: lef; width: 250px;">
+        <div class="mainMenuItem">
+            <button class="headerButton" onclick="BoutonTechnique()">Technique</button>
+            <div class="mainMenuSubMenu" id="techniqueSubMenu">
+                <button class="mainSubMenuButton">Nouveau</button> 
+            </div>
+        </div>       
+        <div class="mainMenuItem">
+            <button class="headerButton" onclick="BoutonResidences()">Résidences</button>
+            <div class="mainMenuSubMenu" id="residencesSubMenu">
+                <button class="mainSubMenuButton">Tadaa1</button> 
+                <button class="mainSubMenuButton">Tadaa2</button> 
+                <button class="mainSubMenuButton">Tadaa3</button> 
+            </div>
+        </div>
+        <div class="mainMenuItem">
+            <button class="headerButton" onclick="BoutonGroupes()">Groupes</button>
+            <div class="mainMenuSubMenu" id="groupesSubMenu">
+                <button class="mainSubMenuButton">Tadaa1</button> 
+                <button class="mainSubMenuButton">Tadaa2</button> 
+                <button class="mainSubMenuButton">Tadaa3</button> 
+            </div>
+        </div>      
+        <div class="mainMenuItem">
+            <button class="headerButton" onclick="BoutonPersonnes()">Personnes</button>
+            <div class="mainMenuSubMenu" id="personnesSubMenu">
+                <button class="mainSubMenuButton">Tadaa1</button> 
+                <button class="mainSubMenuButton">Tadaa2</button> 
+                <button class="mainSubMenuButton">Tadaa3</button> 
+            </div>
+        </div>        
     </div>
     <div class="mainWindow" id="mainWindow">
         Main window
     </div>
+    
     <div class="popUp-container" id="popUp-container">
         <button class="closeButton" onclick="ClosePopUp()">&times;</button>
         <div class="popUp" id="popUp">
