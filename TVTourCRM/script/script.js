@@ -1,21 +1,21 @@
 function BoutonTechnique() {
-    loadHtml("mainWindow", ".//includes//main-technique.html");
     resetSubMenus();
+    loadHtml("mainWindow", ".//includes//main-technique.html");
     document.getElementById("techniqueSubMenu").style.display="block";
 } 
 function BoutonResidences() {
-    loadHtml("mainWindow", ".//includes//main-residences.html");
     resetSubMenus();
+    loadHtml("mainWindow", ".//includes//main-residences.html");
     document.getElementById("residencesSubMenu").style.display="block";
 } 
 function BoutonGroupes() {
-    loadHtml("mainWindow", ".//includes//main-groupes.html");
     resetSubMenus();
+    loadHtml("mainWindow", ".//includes//main-groupes.html");
     document.getElementById("groupesSubMenu").style.display="block";
 } 
 function BoutonPersonnes() {
-    loadHtml("mainWindow", ".//includes//main-personnes.html");
     resetSubMenus();
+    loadHtml("mainWindow", ".//includes//main-personnes.html");
     document.getElementById("personnesSubMenu").style.display="block";
 } 
 function resetSubMenus() {
@@ -23,6 +23,7 @@ function resetSubMenus() {
     document.getElementById("residencesSubMenu").style.display="none";
     document.getElementById("groupesSubMenu").style.display="none";
     document.getElementById("personnesSubMenu").style.display="none";
+    ClosePopUp();
 }
 
 function OpenPopUp(lien) {
@@ -32,7 +33,7 @@ function OpenPopUp(lien) {
     document.getElementById("popUp-container").style.display="block";
 }
 function ClosePopUp() {
-    document.getElementById("mainWindow").style.backgroundColor= "white";
+    document.getElementById("popUp-container").innerHTML="";
     document.getElementById("popUp-container").style.display="none";
 }
 
